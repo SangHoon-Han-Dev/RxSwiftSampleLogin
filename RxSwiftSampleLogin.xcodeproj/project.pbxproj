@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D527E8806576AF99527E46B /* Pods_RxSwiftSampleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20649D144D28CE9D4A01C44 /* Pods_RxSwiftSampleLogin.framework */; };
 		91FDA8AA28E9D17500F2372C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDA8A928E9D17500F2372C /* AppDelegate.swift */; };
 		91FDA8AC28E9D17500F2372C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDA8AB28E9D17500F2372C /* SceneDelegate.swift */; };
 		91FDA8AE28E9D17500F2372C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDA8AD28E9D17500F2372C /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		91FDA8B428E9D17500F2372C /* RxSwiftSampleLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91FDA8B228E9D17500F2372C /* RxSwiftSampleLogin.xcdatamodeld */; };
 		91FDA8B628E9D17700F2372C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FDA8B528E9D17700F2372C /* Assets.xcassets */; };
 		91FDA8B928E9D17700F2372C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FDA8B728E9D17700F2372C /* LaunchScreen.storyboard */; };
+		91FDA8C428E9D29900F2372C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDA8C328E9D29900F2372C /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A31F4984B8210762443FAB6 /* Pods-RxSwiftSampleLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftSampleLogin.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftSampleLogin/Pods-RxSwiftSampleLogin.release.xcconfig"; sourceTree = "<group>"; };
 		91FDA8A628E9D17500F2372C /* RxSwiftSampleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftSampleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FDA8A928E9D17500F2372C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91FDA8AB28E9D17500F2372C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		91FDA8B528E9D17700F2372C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FDA8B828E9D17700F2372C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91FDA8BA28E9D17700F2372C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FDA8C328E9D29900F2372C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		97257CD3331AC4FB7CC6B9AD /* Pods-RxSwiftSampleLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftSampleLogin.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftSampleLogin/Pods-RxSwiftSampleLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		C20649D144D28CE9D4A01C44 /* Pods_RxSwiftSampleLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftSampleLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D527E8806576AF99527E46B /* Pods_RxSwiftSampleLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F157719DA6383571BBF907C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97257CD3331AC4FB7CC6B9AD /* Pods-RxSwiftSampleLogin.debug.xcconfig */,
+				2A31F4984B8210762443FAB6 /* Pods-RxSwiftSampleLogin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		91FDA89D28E9D17500F2372C = {
 			isa = PBXGroup;
 			children = (
 				91FDA8A828E9D17500F2372C /* RxSwiftSampleLogin */,
 				91FDA8A728E9D17500F2372C /* Products */,
+				5F157719DA6383571BBF907C /* Pods */,
+				EF38F853538D01EB902A866D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +76,11 @@
 		91FDA8A828E9D17500F2372C /* RxSwiftSampleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				91FDA8C228E9D26700F2372C /* Model */,
+				91FDA8C128E9D25C00F2372C /* View */,
+				91FDA8C028E9D24F00F2372C /* ViewModel */,
 				91FDA8A928E9D17500F2372C /* AppDelegate.swift */,
 				91FDA8AB28E9D17500F2372C /* SceneDelegate.swift */,
-				91FDA8AD28E9D17500F2372C /* ViewController.swift */,
 				91FDA8AF28E9D17500F2372C /* Main.storyboard */,
 				91FDA8B528E9D17700F2372C /* Assets.xcassets */,
 				91FDA8B728E9D17700F2372C /* LaunchScreen.storyboard */,
@@ -70,6 +90,37 @@
 			path = RxSwiftSampleLogin;
 			sourceTree = "<group>";
 		};
+		91FDA8C028E9D24F00F2372C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91FDA8C328E9D29900F2372C /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		91FDA8C128E9D25C00F2372C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91FDA8AD28E9D17500F2372C /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91FDA8C228E9D26700F2372C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF38F853538D01EB902A866D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C20649D144D28CE9D4A01C44 /* Pods_RxSwiftSampleLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91FDA8BD28E9D17700F2372C /* Build configuration list for PBXNativeTarget "RxSwiftSampleLogin" */;
 			buildPhases = (
+				306E398E096A765D937A5661 /* [CP] Check Pods Manifest.lock */,
 				91FDA8A228E9D17500F2372C /* Sources */,
 				91FDA8A328E9D17500F2372C /* Frameworks */,
 				91FDA8A428E9D17500F2372C /* Resources */,
+				D8E77CABD91E14ECF52B7725 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +189,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		306E398E096A765D937A5661 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftSampleLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8E77CABD91E14ECF52B7725 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftSampleLogin/Pods-RxSwiftSampleLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftSampleLogin/Pods-RxSwiftSampleLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftSampleLogin/Pods-RxSwiftSampleLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91FDA8A228E9D17500F2372C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +239,7 @@
 				91FDA8AE28E9D17500F2372C /* ViewController.swift in Sources */,
 				91FDA8B428E9D17500F2372C /* RxSwiftSampleLogin.xcdatamodeld in Sources */,
 				91FDA8AA28E9D17500F2372C /* AppDelegate.swift in Sources */,
+				91FDA8C428E9D29900F2372C /* LoginViewModel.swift in Sources */,
 				91FDA8AC28E9D17500F2372C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +382,7 @@
 		};
 		91FDA8BE28E9D17700F2372C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97257CD3331AC4FB7CC6B9AD /* Pods-RxSwiftSampleLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +396,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +412,7 @@
 		};
 		91FDA8BF28E9D17700F2372C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A31F4984B8210762443FAB6 /* Pods-RxSwiftSampleLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +426,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
